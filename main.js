@@ -17,8 +17,7 @@ const LUMINANCE = 67;
 
 function logKey(e) {
     // screenLog.innerText = `X/Y: ${e.clientX}, ${e.clientY}`;
-    colorCode = `hsl(${Math.round((e.clientY/maxHeight)*360)}, 
-    ${Math.round(MIN_SATURATION+(1-e.clientX/maxWidth)*(100-MIN_SATURATION))}%, ${LUMINANCE}%)`
+    colorCode = `hsl(${Math.round((e.clientY/maxHeight)*360)}, ${Math.round(MIN_SATURATION+(1-e.clientX/maxWidth)*(100-MIN_SATURATION))}%, ${LUMINANCE}%)`
     document.body.style.backgroundColor = colorCode
 }
 
